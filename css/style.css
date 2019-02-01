@@ -206,7 +206,8 @@ header {
 .main-content {
   margin-top: 60px; }
   .main-content table {
-    margin-bottom: 100px; }
+    margin-bottom: 100px;
+    background-color: #fff; }
     .main-content table thead th {
       color: #000;
       font-weight: 600;
