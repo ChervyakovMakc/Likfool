@@ -1,0 +1,152 @@
+<!doctype html>
+<html lang="ru">
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <!-- -->
+
+    <!-- Reset CSS -->
+    <link rel="stylesheet" href="css/reset.css">
+    <!-- -->
+
+    <!-- Fonts -->
+    <link rel="stylesheet" href="css/fonts.css">
+    <!--  -->
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/media.css">
+
+
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+    <title>Likfool</title>
+</head>
+<body>
+    <header class="container-fluid">
+        <div class="container">
+            <div class="row">
+                <div class="col-6">
+                    <img data-aos="fade-in" src="img/Logo.png" alt="">
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <section class="container functionals-content" data-aos="fade-in" data-aos-duration="1000">
+        <div class="row">
+            <div class="col-4">
+                <div class="avatar">
+                    <img src="img/avatar.png" alt="">
+                </div>
+            </div>
+            <div class="col-8">
+                <div class="user-short-setting">
+                    <p class="user-login align-middle">guilhermesantana88</p>
+                    <button class="add-balance align-middle" type="button" data-toggle="modal" data-target="#modal-balance">Пополнить балланс</button>
+                    <button class="setting" type="button" data-toggle="modal" data-target="#modal-setting"><img src="img/setting.png" alt=""></button>
+                </div>
+
+                <div class="short-info">
+                    <p class="short-balance">Баланс: <span>2000 <img src="img/Ruble.svg" alt=""></span></p>
+
+                    <a href="История-заказов.html" class="short-orders">Заказы <span>3</span></a>
+                </div>
+
+                <div class="short-news">
+                    <p class="name-short-news">Название новости</p>
+                    <p class="text-short-news">Текст новости, что бы можно было его прочитать и сверстать</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <section class="container main-content">
+        <div class="row">
+            <div class="col-12" data-aos="fade-in" data-aos-duration="600">
+                <ul class="list-of-info">
+                    <li>
+                        <a href="index.html">Новый заказ</a>
+                    </li>
+                    <li>
+                        <a href="Услуги-и-цены.html">Услуги и цены</a>
+                    </li>
+                    <li class="active">
+                        <a href="#">Полезные сервисы</a>
+                    </li>
+                    <li>
+                        <a href="Новости.html">Новости</a>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="col-4 new-order new-order-instagram good-services">
+                <div data-aos="fade-in" data-aos-duration="1200">
+                    <p class="banner-promo">Баннер для BESTCHANG</p>
+                </div>
+            </div>
+
+            <div class="col-4 new-order new-order-youtube good-services">
+                <div data-aos="fade-in" data-aos-duration="1200">
+                    <p class="banner-promo">Баннер для SOCIALKIT</p>
+                </div>
+            </div>
+
+            <div class="col-4 new-order new-order-facebook good-services">
+                <div data-aos="fade-in" data-aos-duration="1200">
+                    <p class="banner-promo">Баннер для PROXY-STORE</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    
+
+
+
+
+
+
+<!-- Modal для пополнения баланса -->
+<div class="modal fade" id="modal-balance" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered" role="document">
+    <div class="modal-content">
+      <div class="modal-body">
+        <ul>
+            <li><a href="Пополнить-баланс.html">Пополнить баланс</a></li>
+            <li><a href="История-пополнений.html">История пополнений</a></li>
+        </ul> 
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Modal для настроик -->
+<div class="modal fade" id="modal-setting" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered" role="document">
+    <div class="modal-content">
+      <div class="modal-body">
+        <ul>
+            <li><a href="Редактировать-профиль.html">Редактировать профиль</a></li>
+            <li><a href="#">Документация API</a></li>
+        </ul> 
+      </div>
+    </div>
+  </div>
+</div>
+
+    <script
+  src="https://code.jquery.com/jquery-3.3.1.min.js"
+  integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+  crossorigin="anonymous"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+</body>
+</html>

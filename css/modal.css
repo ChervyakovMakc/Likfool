@@ -1,0 +1,33 @@
+.modal-content {
+  margin: 0px auto;
+  width: 80% !important;
+  border-radius: 15px;
+  border: none; }
+  .modal-content .modal-body {
+    padding: 0; }
+  .modal-content a {
+    font-family: 'Segoe UI';
+    font-size: 14px;
+    text-align: center;
+    display: block;
+    color: #262626;
+    text-decoration: none;
+    margin-top: 15px;
+    margin-bottom: 15px; }
+  .modal-content li {
+    border-bottom: 1px solid #EFEFEF; }
+    .modal-content li:last-child {
+      border-bottom: none; }
+
+.for-select {
+  min-height: 300px; }
+  .for-select .first-select {
+    margin: 0px auto;
+    margin-top: 40px;
+    text-align: center; }
+    .for-select .first-select .jq-selectbox {
+      width: 250px; }
+    .for-select .first-select label {
+      margin-right: 30px; }
+
+/*# sourceMappingURL=modal.css.map */

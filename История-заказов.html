@@ -1,0 +1,176 @@
+<!doctype html>
+<html lang="ru">
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <!-- -->
+
+    <!-- Reset CSS -->
+    <link rel="stylesheet" href="css/reset.css">
+    <!-- -->
+
+    <!-- Fonts -->
+    <link rel="stylesheet" href="css/fonts.css">
+    <!--  -->
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/media.css">
+
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+    <title>Likfool</title>
+</head>
+
+<body>
+    <header class="container-fluid">
+        <div class="container">
+            <div class="row">
+                <div class="col-6">
+                    <a href="index.html"><img src="img/Logo.png" alt=""></a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <section class="container">
+        <div class="row">
+            <div class="col-12">
+                <div class="settings-profile" data-aos='zoom-in'>
+                    <div class="row">
+
+                        <div class="col-4 setting-menu">
+                            <p class="active all-orders-trigger-js">Все заказы</p>
+                            <p class="finished-orders-trigger-js">Выполненные</p>
+                            <p class="active-orders-trigger-js">В очереди</p>
+                        </div>
+
+
+                        <div class="col-8 for-orders">
+                            <div class="row all-orders">
+                                <div>
+                                    <table class="table table-borderless">
+                                        <thead>
+                                            <tr>
+                                                <th scope="col" class="table-title">Соц. сеть</th>
+                                                <th scope="col" class="table-title">Услуга</th>
+                                                <th scope="col" class="table-title">Тариф</th>
+                                                <th scope="col" class="table-title">Статус</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <th scope="row" class="text-center"><img src="img/Instagram-icon.png" alt=""></th>
+                                                <td>Лайки</td>
+                                                <td>Бюджетные 2.9 руб</td>
+                                                <td><button class="finished">Выполнено</button></td>
+                                            </tr>
+                                            <tr>
+                                              <th scope="row" class="text-center"><img src="img/facebook-icon.png" alt=""></th>
+                                              <td>Лайки</td>
+                                              <td>Бюджетные 2.9 руб</td>
+                                              <td><button class="finished">Выполнено</button></td>
+                                          </tr>
+                                          <tr>
+                                              <th scope="row" class="text-center"><img src="img/youtube-icon.png" alt=""></th>
+                                              <td>Лайки</td>
+                                              <td>Бюджетные 2.9 руб</td>
+                                              <td><button class="in-process">В процессе</button></td>
+                                          </tr>
+                                      </tbody>
+                                    </table>
+                              </div>
+                          </div>
+
+                          <div class="row finished-orders" style="display: none;">
+                            <div>
+                                <table class="table table-borderless">
+                                        <thead>
+                                            <tr>
+                                                <th scope="col" class="table-title">Соц. сеть</th>
+                                                <th scope="col" class="table-title">Услуга</th>
+                                                <th scope="col" class="table-title">Тариф</th>
+                                                <th scope="col" class="table-title">Статус</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <th scope="row" class="text-center"><img src="img/Instagram-icon.png" alt=""></th>
+                                                <td>Лайки</td>
+                                                <td>Бюджетные 2.9 руб</td>
+                                                <td><button class="finished">Выполнено</button></td>
+                                            </tr>
+                                            <tr>
+                                              <th scope="row" class="text-center"><img src="img/facebook-icon.png" alt=""></th>
+                                              <td>Лайки</td>
+                                              <td>Бюджетные 2.9 руб</td>
+                                              <td><button class="finished">Выполнено</button></td>
+                                          </tr>
+                                      </tbody>
+                                </table>
+                            </div>
+                        </div>
+
+                        <div class="row active-orders" style="display: none;">
+                            <div>
+                                <table class="table table-borderless">
+                                        <thead>
+                                            <tr>
+                                                <th scope="col" class="table-title">Соц. сеть</th>
+                                                <th scope="col" class="table-title">Услуга</th>
+                                                <th scope="col" class="table-title">Тариф</th>
+                                                <th scope="col" class="table-title">Статус</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                          <tr>
+                                              <th scope="row" class="text-center"><img src="img/youtube-icon.png" alt=""></th>
+                                              <td>Лайки</td>
+                                              <td>Бюджетные 2.9 руб</td>
+                                              <td><button class="in-process">В процессе</button></td>
+                                          </tr>
+                                      </tbody>
+                                    </table>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<script
+src="https://code.jquery.com/jquery-3.3.1.min.js"
+integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+crossorigin="anonymous"></script>
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>
+  AOS.init();
+  $('.all-orders-trigger-js').click(function(){
+    $(this).siblings('.active').removeClass('active');
+    $(this).addClass("active");
+    $('.finished-orders').slideUp();
+    $('.active-orders').slideUp();
+    $('.all-orders').slideDown();
+});
+
+  $('.finished-orders-trigger-js').click(function(){
+    $(this).siblings('.active').removeClass('active');
+    $(this).addClass("active");
+    $('.all-orders').slideUp();
+    $('.active-orders').slideUp();
+    $('.finished-orders').slideDown();
+});
+
+  $('.active-orders-trigger-js').click(function(){
+    $(this).siblings('.active').removeClass('active');
+    $(this).addClass("active");
+    $('.all-orders').slideUp();
+    $('.finished-orders').slideUp();
+    $('.active-orders').slideDown();
+});
+</script>
+</body>
+</html>

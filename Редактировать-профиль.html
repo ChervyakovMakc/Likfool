@@ -1,0 +1,137 @@
+<!doctype html>
+<html lang="ru">
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <!-- -->
+
+    <!-- Reset CSS -->
+    <link rel="stylesheet" href="css/reset.css">
+    <!-- -->
+
+    <!-- Fonts -->
+    <link rel="stylesheet" href="css/fonts.css">
+    <!--  -->
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/media.css">
+
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+    <title>Likfool</title>
+</head>
+
+<body>
+    <header class="container-fluid">
+        <div class="container">
+            <div class="row">
+                <div class="col-6">
+                    <a href="index.html"><img src="img/Logo.png" alt=""></a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <section class="container">
+        <div class="row">
+            <div class="col-12">
+                <div class="settings-profile" data-aos='zoom-in'>
+                    <div class="row">
+
+                        <div class="col-4 setting-menu">
+                            <p class="active change-profile-trigger-js">Редактировать профиль</p>
+                            <p class="change-password-trigger-js">Сменить пароль</p>
+                            <p class="api-trigger-js">Ключ API</p>
+                        </div>
+
+
+                        <div class="col-8 edit-profile">
+                            <div class="row edit-profile-js">
+                                <div class="col-3 left-side-settings">
+                                     <img src="img/avatar.png" alt="Аватар" class="settings-profile-avatar">
+                                     <p>Имя</p>
+                                     <p>Имя<br>пользователя</p>
+                                     <p>Эл. адрес</p>
+                                </div>
+                                <div class="col-8 right-side-settings">
+                                    <p class="user-name">guilhermesantana88</p>
+                                    <span>Сменить фото профиля</span>
+
+                                    <input type="text" placeholder="Фамилия Имя">
+                                    <input type="text" placeholder="guilhermesantana88">
+                                    <input type="text" placeholder="exmaple@gmail.com">
+
+                                    <input type="submit" value="Сохранить">
+                                </div>
+                            </div>
+
+                            <div class="row edit-password-js" style="display: none;">
+                                <div class="col-3 left-side-settings">
+                                    <img src="img/avatar.png" alt="Аватар" class="settings-profile-avatar">
+                                    <p>Cтарый пароль</p>
+                                    <p>Новый пароль</p>
+                                    <p>Подтвердите<br>новый пароль</p>
+                                </div>
+                                <div class="col-8 right-side-settings">
+                                    <p class="user-name">guilhermesantana88</p>
+
+                                    <input type="text">
+                                    <input type="text">
+                                    <input type="text">
+
+                                    <input type="submit" value="Сохранить">
+                                </div>
+                            </div>
+
+                            <div class="row edit-api-js" style="display: none;">
+                                <div class="col-3 left-side-settings">
+                                    <img src="img/avatar.png" alt="Аватар" class="settings-profile-avatar">
+                                    <p>Ваш ключ API</p>
+                                </div>
+                                <div class="col-8 right-side-settings">
+                                    <p class="user-name">guilhermesantana88</p>
+                                    <input type="text" disabled placeholder="d04ae721155ebb99f79073ae207a73c">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+     <script
+  src="https://code.jquery.com/jquery-3.3.1.min.js"
+  integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+  crossorigin="anonymous"></script>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
+        AOS.init();
+      $('.change-profile-trigger-js').click(function(){
+        $(this).siblings('.active').removeClass('active');
+        $(this).addClass("active");
+        $('.edit-api-js').slideUp();
+        $('.edit-password-js').slideUp();
+        $('.edit-profile-js').slideDown();
+      });
+
+      $('.change-password-trigger-js').click(function(){
+        $(this).siblings('.active').removeClass('active');
+        $(this).addClass("active");
+        $('.edit-api-js').slideUp();
+        $('.edit-profile-js').slideUp();
+        $('.edit-password-js').slideDown();
+      });
+
+      $('.api-trigger-js').click(function(){
+        $(this).siblings('.active').removeClass('active');
+        $(this).addClass("active");
+        $('.edit-profile-js').slideUp();
+        $('.edit-password-js').slideUp();
+        $('.edit-api-js').slideDown();
+      });
+  </script>
+</body>
+</html>

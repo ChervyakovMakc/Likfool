@@ -1,0 +1,42 @@
+.modal-content {
+
+	.modal-body {
+		padding: 0;
+	}
+	margin: 0px auto;
+	width: 80%
+	!important;
+	border-radius: 15px;
+	border: none;
+	a {
+		font-family: 'Segoe UI';
+		font-size: 14px;
+		text-align: center;
+		display: block;
+		color: #262626;
+		text-decoration: none;
+		margin-top: 15px;
+		margin-bottom: 15px;
+	}
+	li {
+		border-bottom: 1px solid #EFEFEF;
+		&:last-child {
+			border-bottom: none;
+		}
+	}
+}
+
+.for-select {
+	min-height: 300px;
+	.first-select {
+		margin: 0px auto;
+		margin-top: 40px;
+		text-align: center;
+		.jq-selectbox {
+			width: 250px;
+		}
+		label {
+			margin-right: 30px;
+		}
+	}
+}
