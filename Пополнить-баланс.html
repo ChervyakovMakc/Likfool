@@ -87,7 +87,8 @@
 
     <section class="container">
         <div class="row">
-            <div class="col-6 offset-3">
+            <div class="col-6">
+                <p class="trigger-for-history-of-balance">Показать историю пополнений</p>
                 <div class="history-of-balance" data-aos='zoom-in'>
                     <p><span>october 9, 2018</span> Пополнение на 15 000 <img src="img/Ruble.svg" alt=""></p>
                     <p><span>october 9, 2018</span> Пополнение на 15 000 <img src="img/Ruble.svg" alt=""></p>
@@ -95,37 +96,50 @@
             </div>
         </div>
     </section>
-     <script
-  src="https://code.jquery.com/jquery-3.3.1.min.js"
-  integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
-  crossorigin="anonymous"></script>
-  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-  <script>
+    <script
+    src="https://code.jquery.com/jquery-3.3.1.min.js"
+    integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+    crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
         AOS.init();
 
-      $('.yandex-money-trigger-js').click(function(){
-        $(this).siblings('.active').removeClass('active');
-        $(this).addClass("active");
-        $('.bank-cart').slideUp();
-        $('.perfect-money').slideUp();
-        $('.yandex-money').slideDown();
-      });
+        $('.trigger-for-history-of-balance').click(function(){
+            if (!$(this).data('status')) {
+                $(this).html('Скрыть историю пополнений');
+                $(this).data('status', true);
+                $('.history-of-balance').slideDown();
+            }
+            else {
+                $(this).html('Показать историю пополнений');
+                $(this).data('status', false);
+                $('.history-of-balance').slideUp();
+            }
+        });
 
-      $('.bank-cart-trigger-js').click(function(){
-        $(this).siblings('.active').removeClass('active');
-        $(this).addClass("active");
-        $('.yandex-money').slideUp();
-        $('.perfect-money').slideUp();
-        $('.bank-cart').slideDown();
-      });
+        $('.yandex-money-trigger-js').click(function(){
+            $(this).siblings('.active').removeClass('active');
+            $(this).addClass("active");
+            $('.bank-cart').slideUp();
+            $('.perfect-money').slideUp();
+            $('.yandex-money').slideDown();
+        });
 
-      $('.perfect-money-trigger-js').click(function(){
-        $(this).siblings('.active').removeClass('active');
-        $(this).addClass("active");
-        $('.yandex-money').slideUp();
-        $('.bank-cart').slideUp();
-        $('.perfect-money').slideDown();
-      });
-  </script>
+        $('.bank-cart-trigger-js').click(function(){
+            $(this).siblings('.active').removeClass('active');
+            $(this).addClass("active");
+            $('.yandex-money').slideUp();
+            $('.perfect-money').slideUp();
+            $('.bank-cart').slideDown();
+        });
+
+        $('.perfect-money-trigger-js').click(function(){
+            $(this).siblings('.active').removeClass('active');
+            $(this).addClass("active");
+            $('.yandex-money').slideUp();
+            $('.bank-cart').slideUp();
+            $('.perfect-money').slideDown();
+        });
+    </script>
 </body>
 </html>
