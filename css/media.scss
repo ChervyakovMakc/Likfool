@@ -1,0 +1,86 @@
+@media screen and (min-width: 768px) and (max-width: 991px) {
+	header {
+		text-align: center;
+		
+	}
+
+	.functionals-content {
+		.user-short-setting {
+			.user-login {
+			font-size: 24px;
+			}
+			.add-balance {
+				margin-left: 8px;
+				padding: 0px 8px;
+			}
+			.setting {
+				margin-left: 0px;
+			}
+		}
+	}
+	.good-services {
+		div {
+			height: 210px;
+			.banner-promo {
+				line-height: 210px;
+			}
+			.news-title {
+				margin-top: 60px;
+			}
+		}
+	}
+
+
+
+	.for-orders {
+		.all-orders,
+		.finished-orders,
+		.active-orders {
+			div {
+				margin: 0px auto;
+				margin-top: 5px;
+				margin-left: -0.5%;
+			}
+		}
+	}
+
+
+	.settings-profile {
+		.setting-menu {
+			p {
+				padding-left: 20px;
+			}
+		}
+		.right-side-settings {
+			input {
+				min-width: 100%;
+			}
+		}
+		.left-side-settings {
+			p {
+				font-size: 13px;
+			}
+		}
+
+		.edit-profile-js {
+			.left-side-settings {
+				p {
+					margin-bottom: 40px;
+					&:nth-child(3) {
+						margin-bottom: 35px;
+					}
+				}
+			}
+		}
+		.edit-password-js {
+			.left-side-settings {
+				p {
+					margin-bottom: 35px;
+					&:nth-child(2) {
+						margin-bottom: 45px;
+					}
+				}
+			}
+		}
+	}
+}
