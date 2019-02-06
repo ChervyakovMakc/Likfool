@@ -112,27 +112,13 @@
     <div class="container-fluid now-category">
         <div class="container">
             <div class="col-12">
-                <p>Новый заказ</p>
-                <p>Выберите социальную сеть для накрутки</p>
+                <p class="now-category-first-p">Новый заказ</p>
+                <p class="now-category-second-p">Выберите социальную сеть для накрутки</p>
             </div>
         </div>
     </div>
 
-    <!--Делаем нижний футер для мобильной версии-->
-    <div class="container-fluid mobile-footer">
-        <div class="container">
-            <div class="row">
-                <div class="col-12">
-                    <ul>
-                        <li><img src="img/mobile-news.png" alt=""></li>
-                        <li><img src="img/mobile-new-order.png" alt=""></li>
-                        <li><img src="img/mobile-good-services.png" alt=""></li>
-                        <li><img src="img/mobile-price.png" alt=""><li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-    </div>
+    
 
 
     <section class="container main-content">
@@ -231,19 +217,19 @@
             </div>
             <div class="for-good-services col-12 content-of-main-menu" style="display: none">
                 <div class="row">
-                    <div class="col-4 new-order new-order-instagram good-services">
+                    <div class="col-md-4 col-12 new-order new-order-instagram good-services">
                         <div data-aos="fade-in" data-aos-duration="1200">
                             <p class="banner-promo">Баннер для BESTCHANG</p>
                         </div>
                     </div>
 
-                    <div class="col-4 new-order new-order-youtube good-services">
+                    <div class="col-md-4 col-12 new-order new-order-youtube good-services">
                         <div data-aos="fade-in" data-aos-duration="1200">
                             <p class="banner-promo">Баннер для SOCIALKIT</p>
                         </div>
                     </div>
 
-                    <div class="col-4 new-order new-order-facebook good-services">
+                    <div class="col-md-4 col-12 new-order new-order-facebook good-services">
                         <div data-aos="fade-in" data-aos-duration="1200">
                             <p class="banner-promo">Баннер для PROXY-STORE</p>
                         </div>
@@ -252,21 +238,21 @@
             </div>
             <div class="for-news col-12 content-of-main-menu" style="display: none">
                 <div class="row">
-                    <div class="col-4 new-order new-order-instagram good-services">
+                    <div class="col-md-4 col-12 new-order new-order-instagram good-services">
                         <div data-aos="fade-in" data-aos-duration="1200">
                             <p class="news-title">Название новости</p>
                             <p class="news-text">Добавлены просмотры: за 50 коп и с охватом за 2 руб (1000 шт)</p>
                         </div>
                     </div>
 
-                    <div class="col-4 new-order new-order-youtube good-services">
+                    <div class="col-md-4 col-12 new-order new-order-youtube good-services">
                         <div data-aos="fade-in" data-aos-duration="1200">
                             <p class="news-title">Название новости</p>
                             <p class="news-text">Добавлены просмотры: за 50 коп и с охватом за 2 руб (1000 шт)</p>
                         </div>
                     </div>
 
-                    <div class="col-4 new-order new-order-facebook good-services">
+                    <div class="col-md-4 col-12 new-order new-order-facebook good-services">
                         <div data-aos="fade-in" data-aos-duration="1200">
                             <p class="news-title">Название новости</p>
                             <p class="news-text">Добавлены просмотры: за 50 коп и с охватом за 2 руб (1000 шт)</p>
@@ -351,6 +337,24 @@
     </div>
 </div>
 
+
+<!--Делаем нижний футер для мобильной версии-->
+    <div class="container-fluid mobile-footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <ul class="mobile-bottom-menu">
+                        <li class="for-mobile-news"><img src="img/mobile-news.png" alt=""></li>
+                        <li class="active for-mobile-order"><img src="img/mobile-new-order.png" alt=""></li>
+                        <li class="for-mobile-services"><img src="img/mobile-good-services.png" alt=""></li>
+                        <li class="for-mobile-price"><img src="img/mobile-price.png" alt=""><li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!---->
+
 <script
 src="https://code.jquery.com/jquery-3.3.1.min.js"
 integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
@@ -383,6 +387,39 @@ crossorigin="anonymous"></script>
         $('.for-news').slideDown();       
     });
 
+
+    $('.mobile-bottom-menu li').click(function(){
+        if (!$(this).hasClass('active')) {
+            $(this).siblings('.active').removeClass('active');
+            $(this).addClass('active');
+        }
+    });
+
+    
+    $('.for-mobile-news').click(function(){
+        $(this).parent().parent().parent().parent().parent().parent().parent().find('.content-of-main-menu').slideUp();
+        $(this).parent().parent().parent().parent().parent().parent().parent().find('.now-category .now-category-first-p').text("Новости");
+        $(this).parent().parent().parent().parent().parent().parent().parent().find('.now-category .now-category-second-p').text(" ");
+        $('.for-news').slideDown();   
+    });
+    $('.for-mobile-order').click(function(){
+        $(this).parent().parent().parent().parent().parent().parent().parent().find('.content-of-main-menu').slideUp();
+        $(this).parent().parent().parent().parent().parent().parent().parent().find('.now-category .now-category-first-p').text("Новый заказ");
+        $(this).parent().parent().parent().parent().parent().parent().parent().find('.now-category .now-category-second-p').text("Выберите социальную сеть для накрутки");
+        $('.for-make-new-order').slideDown();  
+    });
+    $('.for-mobile-services').click(function(){
+        $(this).parent().parent().parent().parent().parent().parent().parent().find('.content-of-main-menu').slideUp();
+        $(this).parent().parent().parent().parent().parent().parent().parent().find('.now-category .now-category-first-p').text("Полезные сервисы");
+        $(this).parent().parent().parent().parent().parent().parent().parent().find('.now-category .now-category-second-p').text(" ");
+        $('.for-good-services').slideDown();
+    });
+    $('.for-mobile-price').click(function(){
+        $(this).parent().parent().parent().parent().parent().parent().parent().find('.content-of-main-menu').slideUp();
+        $(this).parent().parent().parent().parent().parent().parent().parent().find('.now-category .now-category-first-p').text("Услуги и цены");
+        $(this).parent().parent().parent().parent().parent().parent().parent().find('.now-category .now-category-second-p').text(" ");
+       $('.for-price').slideDown();   
+    });
 </script>
 </body>
 </html>
