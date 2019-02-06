@@ -38,5 +38,61 @@
     margin-bottom: 35px; }
     .settings-profile .edit-password-js .left-side-settings p:nth-child(2) {
       margin-bottom: 45px; } }
+@media screen and (min-width: 768px) {
+  header {
+    display: block; }
+
+  .mobile-header {
+    display: none; } }
+@media screen and (min-width: 320px) and (max-width: 767px) {
+  header {
+    display: none; }
+
+  .mobile-header {
+    background-color: #fff;
+    border-bottom: 0.5px solid rgba(0, 0, 0, 0.3); }
+    .mobile-header .user-name {
+      font-weight: 400;
+      font-size: 20px;
+      color: #262626;
+      margin-top: 10px;
+      margin-bottom: 15px; }
+    .mobile-header .for-button {
+      text-align: right; }
+      .mobile-header .for-button button {
+        background-color: transparent;
+        border: none;
+        transform: rotate(90deg);
+        margin-top: 13px;
+        margin-right: 0px; }
+
+  .functionals-content {
+    margin-top: 20px; }
+    .functionals-content .avatar {
+      border: none;
+      width: auto;
+      height: auto; }
+      .functionals-content .avatar img {
+        width: 100%;
+        height: auto; }
+    .functionals-content .user-short-setting .user-login {
+      display: none; }
+    .functionals-content .user-short-setting .setting {
+      display: none; }
+    .functionals-content .user-short-setting .add-balance {
+      display: none; }
+    .functionals-content .short-info .make-balance {
+      display: block;
+      width: 100%;
+      text-align: center;
+      color: #fff;
+      font-weight: 400;
+      font-size: 14px;
+      text-decoration: none;
+      padding: 10px;
+      background-color: #3897F0;
+      border-radius: 4px;
+      margin-top: 15px;
+      letter-spacing: 1px; } }
 
 /*# sourceMappingURL=media.css.map */
