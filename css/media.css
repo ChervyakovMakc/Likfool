@@ -1,3 +1,4 @@
+@charset "UTF-8";
 @media screen and (min-width: 768px) and (max-width: 991px) {
   header {
     text-align: center; }
@@ -58,8 +59,17 @@
     display: none; }
 
   .mobile-footer {
+    display: none; }
+
+  .hidden-for-desctop {
     display: none; } }
+@media screen and (min-width: 400px) and (max-width: 767px) {
+  .functionals-content .avatar {
+    margin-top: 10%; } }
 @media screen and (min-width: 320px) and (max-width: 767px) {
+  .hidden-for-mobile {
+    display: none; }
+
   header {
     display: none; }
 
@@ -213,6 +223,58 @@
         margin-bottom: 10px; }
 
   .main-content {
-    margin-top: 20px; } }
+    margin-top: 20px; }
+
+  /*╨С╨░╨╗╨░╨╜╤Б*/
+  .kind-of-money {
+    margin-top: 50px; }
+    .kind-of-money .row {
+      margin-bottom: 30px; }
+    .kind-of-money .for-input {
+      margin-top: 7px;
+      width: 100%;
+      position: relative; }
+      .kind-of-money .for-input:after {
+        display: block;
+        content: '';
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 32px;
+        height: 32px;
+        border-right: 1px solid #EFEFEF; }
+      .kind-of-money .for-input input[type='text'] {
+        padding-left: 40px;
+        height: 32px;
+        width: 100%;
+        border: 1px solid #EFEFEF;
+        border-radius: 4px;
+        background-color: #fff;
+        outline: none; }
+      .kind-of-money .for-input input[type='submit'] {
+        background-color: #3897F0;
+        color: #fff;
+        border: none;
+        border-radius: 4px;
+        padding: 7px 15px;
+        margin-top: 10px; }
+    .kind-of-money .for-yandex:after,
+    .kind-of-money .for-cart:after {
+      content: '';
+      background-image: url(../img/Ruble.svg);
+      background-repeat: no-repeat;
+      background-position: center; }
+    .kind-of-money .for-perfect:after {
+      content: '';
+      background-image: url(../img/dollar.svg);
+      background-repeat: no-repeat;
+      background-position: center; } }
+@media screen and (max-width: 360px) {
+  .history-of-balance p {
+    font-size: 13px; }
+    .history-of-balance p span {
+      font-size: 13px;
+      letter-spacing: 0;
+      margin-right: 10px; } }
 
 /*# sourceMappingURL=media.css.map */

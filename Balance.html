@@ -35,10 +35,26 @@
         </div>
     </header>
 
+    <!-- Mobile version: 320px - 767px -->
+    <!--Хедер для телефонной версии-->
+    <div class="container-fluid mobile-header">
+        <div class="container">
+            <div class="row">
+                <div class="col-10">
+                    <p class="user-name">guilhermesantana88</p>
+                </div>
+                <div class="col-2 for-button">
+                    <button class="setting" type="button" data-toggle="modal" data-target="#modal-setting"><img src="img/setting.png" alt=""></button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--End of mobile header-->
+
     <section class="container">
         <div class="row">
             <div class="col-12">
-                <div class="settings-profile" data-aos='zoom-in'>
+                <div class="settings-profile hidden-for-mobile" data-aos='zoom-in'>
                     <div class="row">
 
                         <div class="col-4 setting-menu">
@@ -85,9 +101,47 @@
         </div>
     </section>
 
+    <div class="container hidden-for-desctop kind-of-money">
+        <div class="row">
+            <div class="col-5">
+                <img src="img/yandex-money-mobile.png" alt="">
+            </div>
+            <div class="col-7">
+                <div class="for-input for-yandex">
+                    <input type="text">
+                    <input type="submit" value="Оплатить">
+                </div>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-5">
+                <img src="img/perfect-money-mobile.png" alt="">
+            </div>
+            <div class="col-7">
+                <div class="for-input for-perfect">
+                    <input type="text">
+                    <input type="submit" value="Оплатить">
+                </div>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-5">
+                <img src="img/bank-money-mobile.png" alt="">
+            </div>
+            <div class="col-7">
+                <div class="for-input for-cart">
+                    <input type="text">
+                    <input type="submit" value="Оплатить">
+                </div>
+            </div>
+        </div>
+    </div>
+
     <section class="container">
         <div class="row">
-            <div class="col-6 col-md-8 col-lg-6">
+            <div class="col-12 col-md-8 col-lg-6">
                 <p class="trigger-for-history-of-balance">Показать историю пополнений</p>
                 <div class="history-of-balance" data-aos='zoom-in'>
                     <p><span>october 9, 2018</span> Пополнение на 15 000 <img src="img/Ruble.svg" alt=""></p>
@@ -96,6 +150,29 @@
             </div>
         </div>
     </section>
+
+
+    <!--Делаем нижний футер для мобильной версии-->
+    <div class="container-fluid mobile-footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <ul class="mobile-bottom-menu">
+                        <li class="for-mobile-news"><img src="img/mobile-news.png" alt=""></li>
+                        <li class="active for-mobile-order"><img src="img/mobile-new-order.png" alt=""></li>
+                        <li class="for-mobile-services"><img src="img/mobile-good-services.png" alt=""></li>
+                        <li class="for-mobile-price"><img src="img/mobile-price.png" alt=""><li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!---->
+
+
+
+
+
     <script
     src="https://code.jquery.com/jquery-3.3.1.min.js"
     integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
