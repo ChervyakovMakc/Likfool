@@ -69,7 +69,7 @@
                     <button class="setting" type="button" data-toggle="modal" data-target="#modal-setting"><img src="img/setting.png" alt=""></button>
                 </div>
 
-                <div class="short-info">
+                <div class="short-info"> <!--Для дэсктопа-->
                     <p class="short-balance">Баланс: <span>2000 <img src="img/Ruble.svg" alt=""></span></p>
 
                     <a href="History-of-order.html" class="short-orders">Заказы <span>3</span></a>
@@ -77,10 +77,32 @@
                     <a href="Balance.html" class="make-balance">Пополнить балланс</a>
                 </div>
 
+                <!-- ДЛЯ МОБИЛЬНОЙ ВЕРСИИ -->
+                <div class="row mobile-short-info">
+                    <div class="col-6 text-center">
+                         <p class="short-balance">Баланс: <span>2000 <img src="img/Ruble.svg" alt=""></span></p>
+                    </div>
+                    <div class="col-6 text-center">
+                         <a href="History-of-order.html" class="short-orders">Заказы <span>3</span></a>
+                    </div>
+                    <div class="col-12">
+                        <a href="Balance.html" class="make-balance">Пополнить балланс</a>
+                    </div>
+                </div>
+
+                <!-- -->
+
+                <!--Превью новости для дэсктопной версии-->
                 <div class="short-news">
                     <p class="name-short-news">Название новости</p>
                     <p class="text-short-news">Текст новости, что бы можно было его прочитать и сверстать</p>
                 </div>
+                <!---->
+            </div>
+
+            <div class="col-12 mobile-short-news">
+                <p class="mobile-news-prev-title">Превью новости</p>
+                <p class="mobile-news-prev-text">Текст новости, что бы можно было его прочитать и сверстать</p>
             </div>
         </div>
     </section>
@@ -107,15 +129,15 @@
             
             <div class="for-make-new-order col-12 content-of-main-menu">
                 <div class="row">
-                    <div class="col-4 new-order new-order-instagram">
+                    <div class="col-md-4 col-12 new-order new-order-instagram">
                         <img data-aos="fade-in" data-aos-duration="1200" src="img/Instagram.png" alt="" class="img-fluid" data-toggle="modal" data-target="#modal-inst-first">
                     </div>
 
-                    <div class="col-4 new-order new-order-youtube">
+                    <div class="col-md-4 col-12 new-order new-order-youtube">
                         <img data-aos="fade-in" data-aos-duration="1200" src="img/YouTube.png" alt="" class="img-fluid">
                     </div>
 
-                    <div class="col-4 new-order new-order-facebook">
+                    <div class="col-md-4 col-12 new-order new-order-facebook">
                         <img data-aos="fade-in" data-aos-duration="1200" src="img/Faceboook.png" alt="" class="img-fluid">
                     </div>
                 </div>

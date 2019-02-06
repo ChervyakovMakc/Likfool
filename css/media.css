@@ -43,6 +43,12 @@
     display: block; }
 
   .mobile-header {
+    display: none; }
+
+  .short-info .make-balance {
+    display: none; }
+
+  .mobile-short-info {
     display: none; } }
 @media screen and (min-width: 320px) and (max-width: 767px) {
   header {
@@ -68,6 +74,8 @@
 
   .functionals-content {
     margin-top: 20px; }
+    .functionals-content .short-news {
+      display: none; }
     .functionals-content .avatar {
       border: none;
       width: auto;
@@ -81,18 +89,60 @@
       display: none; }
     .functionals-content .user-short-setting .add-balance {
       display: none; }
-    .functionals-content .short-info .make-balance {
-      display: block;
-      width: 100%;
-      text-align: center;
-      color: #fff;
+    .functionals-content .short-info {
+      display: none; }
+    .functionals-content .mobile-short-info {
+      margin-top: 30px;
+      color: #262626; }
+      .functionals-content .mobile-short-info .short-balance {
+        text-align: center; }
+        .functionals-content .mobile-short-info .short-balance span {
+          margin: 0px auto;
+          margin-top: 5px;
+          width: 100%;
+          display: block;
+          font-weight: 600; }
+      .functionals-content .mobile-short-info .short-orders {
+        margin-left: 0px;
+        text-decoration: none;
+        color: #262626; }
+        .functionals-content .mobile-short-info .short-orders span {
+          margin: 0px auto;
+          margin-top: 5px;
+          width: 100%;
+          display: block;
+          text-align: center;
+          font-weight: 600; }
+      .functionals-content .mobile-short-info .make-balance {
+        display: block;
+        width: 100%;
+        text-align: center;
+        color: #fff;
+        font-weight: 400;
+        font-size: 14px;
+        text-decoration: none;
+        padding: 10px;
+        background-color: #3897F0;
+        border-radius: 4px;
+        margin-top: 15px;
+        letter-spacing: 1px; }
+    .functionals-content .mobile-short-news .mobile-news-prev-title {
+      font-size: 16px;
+      line-height: 18px;
+      margin-top: 0px;
+      color: #262626;
+      font-weight: 600; }
+    .functionals-content .mobile-short-news .mobile-news-prev-text {
       font-weight: 400;
+      color: #262626;
+      line-height: 18px;
       font-size: 14px;
-      text-decoration: none;
-      padding: 10px;
-      background-color: #3897F0;
-      border-radius: 4px;
-      margin-top: 15px;
-      letter-spacing: 1px; } }
+      margin-top: 5px; }
+
+  .content-of-main-menu .new-order {
+    margin-bottom: 20px; }
+    .content-of-main-menu .new-order img {
+      display: block;
+      margin: 0px auto; } }
 
 /*# sourceMappingURL=media.css.map */
