@@ -172,6 +172,13 @@
 		z-index: 2;
 		background-color: #fff;
 		border-bottom: 0.5px solid rgba(0, 0, 0, 0.3);
+
+		.mobile-logo {
+			display: block;
+			margin-top: 6px;
+			margin-bottom: 6px;
+			text-align: center;
+		}
 		.user-name {
 			font-weight: 400;
 			font-size: 20px;
@@ -328,7 +335,7 @@
 
 	/*Баланс*/
 	.kind-of-money {
-		margin-top: 50px;
+		margin-top: 20px;
 		.row {
 			margin-bottom: 30px;
 		}
@@ -381,6 +388,25 @@
     			background-position: center;
 			}
 		}
+	}
+	.mobile-history-balance {
+		margin-bottom: 100px;
+	}
+	.mobile-page-title {
+		margin-top: 70px;
+		border-bottom: 1px solid #EFEFEF;
+		p {
+			text-align: center;
+			font-size: 16px;
+			font-weight: bold;
+			color: #3897F0;
+			margin-bottom: 25px;
+		}
+	}
+	.commission {
+		font-size: 12px;
+		color: #515151;
+		font-weight: 300;
 	}
 }
 

@@ -112,6 +112,11 @@
     z-index: 2;
     background-color: #fff;
     border-bottom: 0.5px solid rgba(0, 0, 0, 0.3); }
+    .mobile-header .mobile-logo {
+      display: block;
+      margin-top: 6px;
+      margin-bottom: 6px;
+      text-align: center; }
     .mobile-header .user-name {
       font-weight: 400;
       font-size: 20px;
@@ -227,7 +232,7 @@
 
   /*╨С╨░╨╗╨░╨╜╤Б*/
   .kind-of-money {
-    margin-top: 50px; }
+    margin-top: 20px; }
     .kind-of-money .row {
       margin-bottom: 30px; }
     .kind-of-money .for-input {
@@ -268,7 +273,25 @@
       content: '';
       background-image: url(../img/dollar.svg);
       background-repeat: no-repeat;
-      background-position: center; } }
+      background-position: center; }
+
+  .mobile-history-balance {
+    margin-bottom: 100px; }
+
+  .mobile-page-title {
+    margin-top: 70px;
+    border-bottom: 1px solid #EFEFEF; }
+    .mobile-page-title p {
+      text-align: center;
+      font-size: 16px;
+      font-weight: bold;
+      color: #3897F0;
+      margin-bottom: 25px; }
+
+  .commission {
+    font-size: 12px;
+    color: #515151;
+    font-weight: 300; } }
 @media screen and (max-width: 360px) {
   .history-of-balance p {
     font-size: 13px; }
