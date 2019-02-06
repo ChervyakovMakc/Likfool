@@ -82,8 +82,13 @@
         display: inline-block;
         margin-right: 10%;
         border-bottom: 1px solid transparent; }
+        .mobile-footer ul li:last-child {
+          margin-right: 0px; }
+        .mobile-footer ul li:nth-last-child(2) {
+          margin-right: 0; }
         .mobile-footer ul li img {
           margin-top: 15px;
+          margin-bottom: 10px;
           width: 30px;
           height: 30px; }
       .mobile-footer ul .active {

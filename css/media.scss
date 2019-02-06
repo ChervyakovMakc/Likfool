@@ -133,8 +133,15 @@
 				display: inline-block;
 				margin-right: 10%;
 				border-bottom: 1px solid transparent;
+				&:last-child {
+					margin-right: 0px;
+				}
+				&:nth-last-child(2) {
+					margin-right: 0;
+				}
 				img {
 					margin-top: 15px;
+					margin-bottom: 10px;
 					width: 30px;
 					height: 30px;
 				}
