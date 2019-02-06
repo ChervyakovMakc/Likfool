@@ -114,8 +114,8 @@
     border-bottom: 0.5px solid rgba(0, 0, 0, 0.3); }
     .mobile-header .mobile-logo {
       display: block;
-      margin-top: 6px;
-      margin-bottom: 6px;
+      margin-top: 15px;
+      margin-bottom: 15px;
       text-align: center; }
     .mobile-header .user-name {
       font-weight: 400;
@@ -279,7 +279,7 @@
     margin-bottom: 100px; }
 
   .mobile-page-title {
-    margin-top: 70px;
+    margin-top: 85px;
     border-bottom: 1px solid #EFEFEF; }
     .mobile-page-title p {
       text-align: center;
