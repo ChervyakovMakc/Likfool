@@ -1,5 +1,10 @@
-.modal-content {
+#modal-inst-first {
+	.modal-content {
+		width: 100%!important;
+	}
+}
 
+.modal-content {
 	.modal-body {
 		padding: 0;
 	}
@@ -27,16 +32,15 @@
 }
 
 .for-select {
-	min-height: 300px;
 	.first-select {
 		margin: 0px auto;
 		margin-top: 40px;
-		text-align: center;
+		text-align: left;
 		.jq-selectbox {
-			width: 250px;
+			width: 100%;
 		}
 		label {
-			margin-right: 30px;
+			margin-right: 0px;
 		}
 	}
 }

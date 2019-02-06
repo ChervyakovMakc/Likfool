@@ -1,3 +1,6 @@
+#modal-inst-first .modal-content {
+  width: 100% !important; }
+
 .modal-content {
   margin: 0px auto;
   width: 80% !important;
@@ -19,15 +22,13 @@
     .modal-content li:last-child {
       border-bottom: none; }
 
-.for-select {
-  min-height: 300px; }
-  .for-select .first-select {
-    margin: 0px auto;
-    margin-top: 40px;
-    text-align: center; }
-    .for-select .first-select .jq-selectbox {
-      width: 250px; }
-    .for-select .first-select label {
-      margin-right: 30px; }
+.for-select .first-select {
+  margin: 0px auto;
+  margin-top: 40px;
+  text-align: left; }
+  .for-select .first-select .jq-selectbox {
+    width: 100%; }
+  .for-select .first-select label {
+    margin-right: 0px; }
 
 /*# sourceMappingURL=modal.css.map */

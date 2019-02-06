@@ -22,7 +22,7 @@
     <title>Likfool</title>
 </head>
 <body>
-    <div class="container">
+    <div class="container container-for-register">
         <div class="row">
             <div class="col-6 register-phones text-right">
                 <img src="img/phones.png" alt="" class="img-fluid">
@@ -41,10 +41,45 @@
                 </div>
 
                 <div class="enter">
-                    <p>Есть аккаунт? <a href="Вход.html">Вход</a></p>
+                    <p>Есть аккаунт? <span>Вход</span></p>
                 </div>
             </div>
         </div>
     </div>
+
+    <div class="container container-for-enter">
+        <div class="row">
+            <div class="col-5 mx-auto">
+                <div class="solo-enter register">
+                    <img src="img/Logo-for-register.png" alt="">
+                    <input type="text" placeholder="Номер телефона, имя пользователя ил электрон...">
+                    <input type="password" placeholder="Пароль">
+                    <input type="submit" value="Войти">
+                </div>
+
+                <div class="enter">
+                    <p>Еще нет аккаунта? <span>Зарегистрируйтесь</span></p>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <script
+src="https://code.jquery.com/jquery-3.3.1.min.js"
+integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+crossorigin="anonymous"></script>
+
+    <script>
+        $('.container-for-enter').hide();
+        $('.container-for-register .enter').click(function(){
+            $('.container-for-register').slideUp();
+            $('.container-for-enter').slideDown();
+        });
+        $('.container-for-enter .enter').click(function(){
+            $('.container-for-enter').slideUp();
+            $('.container-for-register').slideDown();
+        });
+    </script>
 </body>
 </html>
