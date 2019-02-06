@@ -389,9 +389,11 @@ crossorigin="anonymous"></script>
 
 
     $('.mobile-bottom-menu li').click(function(){
+        document.body.scrollTop = document.documentElement.scrollTop = 0;
         if (!$(this).hasClass('active')) {
             $(this).siblings('.active').removeClass('active');
             $(this).addClass('active');
+
         }
     });
 
