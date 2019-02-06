@@ -426,6 +426,7 @@
 			}
 			.active {
 				color: #3897F0;
+				font-weight: normal;
 				&:after {
 					display: none;
 				}
@@ -451,6 +452,42 @@
 			button {
 				font-size: 12px;
 				padding: 5px 7px;
+			}
+		}
+	}
+
+
+
+	/*Настройки профиля, Редактировать профиль*/
+	.settings-profile .edit-password-js .right-side-settings .user-name, 
+	.settings-profile .edit-api-js .right-side-settings .user-name {
+		margin-bottom: 65px
+		!important;
+	}
+	.settings-profile {
+		margin-bottom: 80px;
+		.left-side-settings {
+			img {
+				margin-bottom: 48px;
+			}
+			p {
+				font-size: 12px;
+				margin-bottom: 38px;
+			}
+		}
+		.right-side-settings {
+			.user-name {
+				font-size: 16px;
+			}
+			input {
+				min-width: 100px
+				!important;
+				width: 100%;
+				
+			}
+			p {
+				font-size: 12px;
+				margin-bottom: 15px!important;
 			}
 		}
 	}

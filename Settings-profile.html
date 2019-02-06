@@ -35,28 +35,42 @@
         </div>
     </header>
 
+    <!-- Mobile version: 320px - 767px -->
+    <!--Хедер для телефонной версии-->
+    <div class="container-fluid mobile-header">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <a href="index.html" class="mobile-logo"><img src="img/mobile-logo.png" alt=""></a>
+
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--End of mobile header-->
+
     <section class="container">
         <div class="row">
             <div class="col-12">
                 <div class="settings-profile" data-aos='zoom-in'>
                     <div class="row">
 
-                        <div class="col-4 setting-menu">
+                        <div class="col-md-4 col-12 setting-menu">
                             <p class="active change-profile-trigger-js">Редактировать профиль</p>
                             <p class="change-password-trigger-js">Сменить пароль</p>
                             <p class="api-trigger-js">Ключ API</p>
                         </div>
 
 
-                        <div class="col-8 edit-profile">
+                        <div class="col-md-8 col-12 edit-profile">
                             <div class="row edit-profile-js">
-                                <div class="col-3 left-side-settings">
+                                <div class="col-md-3 col-4 left-side-settings">
                                      <img src="img/avatar.png" alt="Аватар" class="settings-profile-avatar">
                                      <p>Имя</p>
                                      <p>Имя<br>пользователя</p>
                                      <p>Эл. адрес</p>
                                 </div>
-                                <div class="col-8 right-side-settings">
+                                <div class="col-md-8 col-7 right-side-settings">
                                     <p class="user-name">guilhermesantana88</p>
                                     <span>Сменить фото профиля</span>
 
@@ -69,13 +83,13 @@
                             </div>
 
                             <div class="row edit-password-js" style="display: none;">
-                                <div class="col-3 left-side-settings">
+                                <div class="col-md-3 col-4 left-side-settings">
                                     <img src="img/avatar.png" alt="Аватар" class="settings-profile-avatar">
                                     <p>Cтарый пароль</p>
                                     <p>Новый пароль</p>
                                     <p>Подтвердите<br>новый пароль</p>
                                 </div>
-                                <div class="col-8 right-side-settings">
+                                <div class="col-md-8 col-7 right-side-settings">
                                     <p class="user-name">guilhermesantana88</p>
 
                                     <input type="text">
@@ -87,11 +101,11 @@
                             </div>
 
                             <div class="row edit-api-js" style="display: none;">
-                                <div class="col-3 left-side-settings">
+                                <div class="col-md-3 col-4 left-side-settings">
                                     <img src="img/avatar.png" alt="Аватар" class="settings-profile-avatar">
                                     <p>Ваш ключ API</p>
                                 </div>
-                                <div class="col-8 right-side-settings">
+                                <div class="col-md-8 col-7 right-side-settings">
                                     <p class="user-name">guilhermesantana88</p>
                                     <input type="text" disabled placeholder="d04ae721155ebb99f79073ae207a73c">
                                 </div>
@@ -102,6 +116,23 @@
             </div>
         </div>
     </section>
+
+    <!--Делаем нижний футер для мобильной версии-->
+    <div class="container-fluid mobile-footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <ul class="mobile-bottom-menu">
+                        <li class="for-mobile-news"><img src="img/mobile-news.png" alt=""></li>
+                        <li class="for-mobile-order"><img src="img/mobile-new-order.png" alt=""></li>
+                        <li class="for-mobile-services"><img src="img/mobile-good-services.png" alt=""></li>
+                        <li class="for-mobile-price"><img src="img/mobile-price.png" alt=""><li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!---->
      <script
   src="https://code.jquery.com/jquery-3.3.1.min.js"
   integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="

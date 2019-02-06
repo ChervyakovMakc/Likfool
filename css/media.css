@@ -303,7 +303,8 @@
       .settings-profile .setting-menu p:first-child {
         padding-left: 2%; }
     .settings-profile .setting-menu .active {
-      color: #3897F0; }
+      color: #3897F0;
+      font-weight: normal; }
       .settings-profile .setting-menu .active:after {
         display: none; }
 
@@ -319,7 +320,28 @@
     font-size: 12px; }
   .for-orders table button {
     font-size: 12px;
-    padding: 5px 7px; } }
+    padding: 5px 7px; }
+
+  /*╨Э╨░╤Б╤В╤А╨╛╨╣╨║╨╕ ╨┐╤А╨╛╤Д╨╕╨╗╤П, ╨а╨╡╨┤╨░╨║╤В╨╕╤А╨╛╨▓╨░╤В╤М ╨┐╤А╨╛╤Д╨╕╨╗╤М*/
+  .settings-profile .edit-password-js .right-side-settings .user-name,
+  .settings-profile .edit-api-js .right-side-settings .user-name {
+    margin-bottom: 65px !important; }
+
+  .settings-profile {
+    margin-bottom: 80px; }
+    .settings-profile .left-side-settings img {
+      margin-bottom: 48px; }
+    .settings-profile .left-side-settings p {
+      font-size: 12px;
+      margin-bottom: 38px; }
+    .settings-profile .right-side-settings .user-name {
+      font-size: 16px; }
+    .settings-profile .right-side-settings input {
+      min-width: 100px !important;
+      width: 100%; }
+    .settings-profile .right-side-settings p {
+      font-size: 12px;
+      margin-bottom: 15px !important; } }
 @media screen and (max-width: 360px) {
   .history-of-balance p {
     font-size: 13px; }
